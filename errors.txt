@@ -1,0 +1,43 @@
+﻿
+> mondayfedummyui@0.0.0 build
+> tsc -b && vite build
+
+src/hooks/useUsers.ts(209,32): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(name: string, value: string | Blob): void', gave the following error.
+    Argument of type 'File | undefined' is not assignable to parameter of type 'string | Blob'.
+      Type 'undefined' is not assignable to type 'string | Blob'.
+  Overload 2 of 3, '(name: string, value: string): void', gave the following error.
+    Argument of type 'File | undefined' is not assignable to parameter of type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+  Overload 3 of 3, '(name: string, blobValue: Blob, filename?: string | undefined): void', gave the following error.
+    Argument of type 'File | undefined' is not assignable to parameter of type 'Blob'.
+      Type 'undefined' is not assignable to type 'Blob'.
+src/hooks/useWarehouses.ts(100,32): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(name: string, value: string | Blob): void', gave the following error.
+    Argument of type 'File | undefined' is not assignable to parameter of type 'string | Blob'.
+      Type 'undefined' is not assignable to type 'string | Blob'.
+  Overload 2 of 3, '(name: string, value: string): void', gave the following error.
+    Argument of type 'File | undefined' is not assignable to parameter of type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+  Overload 3 of 3, '(name: string, blobValue: Blob, filename?: string | undefined): void', gave the following error.
+    Argument of type 'File | undefined' is not assignable to parameter of type 'Blob'.
+      Type 'undefined' is not assignable to type 'Blob'.
+src/pages/roles/AddRole.tsx(29,5): error TS2322: Type 'Resolver<{ name: string; permissions?: string[] | undefined; }, any, { permissions: string[]; name: string; }>' is not assignable to type 'Resolver<{ permissions: string[]; name: string; }, any, { permissions: string[]; name: string; }>'.
+  Types of parameters 'options' and 'options' are incompatible.
+    Type 'ResolverOptions<{ permissions: string[]; name: string; }>' is not assignable to type 'ResolverOptions<{ name: string; permissions?: string[] | undefined; }>'.
+      Type 'string[] | undefined' is not assignable to type 'string[]'.
+        Type 'undefined' is not assignable to type 'string[]'.
+src/pages/roles/AddRole.tsx(133,36): error TS2345: Argument of type '(data: RoleFormData) => void' is not assignable to parameter of type 'SubmitHandler<TFieldValues>'.
+  Types of parameters 'data' and 'data' are incompatible.
+    Type 'TFieldValues' is not assignable to type '{ permissions: string[]; name: string; }'.
+      Type 'FieldValues' is missing the following properties from type '{ permissions: string[]; name: string; }': permissions, name
+src/pages/roles/EditRole.tsx(32,5): error TS2322: Type 'Resolver<{ name: string; permissions?: string[] | undefined; }, any, { permissions: string[]; name: string; }>' is not assignable to type 'Resolver<{ permissions: string[]; name: string; }, any, { permissions: string[]; name: string; }>'.
+  Types of parameters 'options' and 'options' are incompatible.
+    Type 'ResolverOptions<{ permissions: string[]; name: string; }>' is not assignable to type 'ResolverOptions<{ name: string; permissions?: string[] | undefined; }>'.
+      Type 'string[] | undefined' is not assignable to type 'string[]'.
+        Type 'undefined' is not assignable to type 'string[]'.
+src/pages/roles/EditRole.tsx(184,36): error TS2345: Argument of type '(data: RoleFormData) => void' is not assignable to parameter of type 'SubmitHandler<TFieldValues>'.
+  Types of parameters 'data' and 'data' are incompatible.
+    Type 'TFieldValues' is not assignable to type '{ permissions: string[]; name: string; }'.
+      Type 'FieldValues' is missing the following properties from type '{ permissions: string[]; name: string; }': permissions, name
+src/pages/stock_management/AddStockTransfer.tsx(48,43): error TS6133: 'stockBalancesLoading' is declared but its value is never read.

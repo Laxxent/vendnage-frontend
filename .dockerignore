@@ -1,0 +1,27 @@
+# Frontend .dockerignore
+.git
+.gitignore
+.env
+.env.local
+.env.development
+.env.test
+node_modules
+dist
+build
+coverage
+.vscode
+.idea
+*.log
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+docker-compose.yml
+Dockerfile
+README.md
+.eslintrc.cjs
+.prettierrc
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
